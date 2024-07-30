@@ -9,9 +9,9 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-const Thumbnail = ({ children, link }) => {
+const Thumbnail = ({ children, link, className }) => {
   return (
-      <Link to={link}>
+      <Link className={className} to={link}>
           <Card className="w-64 h-40 border divide-y-2 divide-black border-black cursor-pointer">
             {children}
           </Card>
@@ -21,8 +21,8 @@ const Thumbnail = ({ children, link }) => {
 
 const Header = ({ children }) => {
   return (
-      <CardHeader className="h-12 flex-center thumbnail-header">
-       <CardTitle>{children}</CardTitle>
+      <CardHeader className="h-12 flex-center">
+       <CardTitle className="thumbnail-header">{children}</CardTitle>
       </CardHeader>
   );
 };

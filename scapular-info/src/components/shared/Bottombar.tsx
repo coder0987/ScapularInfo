@@ -6,9 +6,9 @@ const Bottombar = () => {
   const { pathname } = useLocation();
 
   return (
-    <section className="bottom-bar">
+    <section className="flex z-50 w-full fixed bottom-0 bg-dark-2 px-5 py-4 md:hidden">
       {bottombarLinks.map((link) => {
-        const isActive = pathname === link.route;
+        const isActive = link.route === '/' ? pathname === '/' : pathname.includes(link.route);
         return (
           <Link
             key={`bottombar-${link.label}`}

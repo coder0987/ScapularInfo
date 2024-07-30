@@ -1,15 +1,12 @@
 import Thumbnail from "@/components/shared/Thumbnail";
+import Row from "@/components/shared/Row";
+import { scapulars } from "@/constants";
 
 const Scapulars = () => {
   return (
-    <div className="flex flex-col gap-6 m-2">
+    <div className="flex flex-col gap-6 home-container">
         <h2 className="title">Scapulars</h2>
-        <div className="flex flex-center">
-            <Thumbnail link="/scapulars/brown-scapular">
-              <Thumbnail.Image src="brownscapular.jpg" />
-              <Thumbnail.Header>Brown Scapular</Thumbnail.Header>
-            </Thumbnail>
-        </div>
+        <Row label="scapular" content={scapulars} />
     </div>
   );
 };

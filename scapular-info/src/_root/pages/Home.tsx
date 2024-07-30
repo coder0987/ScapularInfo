@@ -1,24 +1,16 @@
 import Thumbnail from "@/components/shared/Thumbnail";
+import Row from "@/components/shared/Row";
+import { scapulars, prayers, resources } from "@/constants";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-6 m-2">
+    <div className="flex flex-col gap-4 home-container items-center md:items-start">
         <h2 className="title">Scapulars</h2>
-        <div className="flex flex-center">
-            <Thumbnail link="/scapulars/brown-scapular">
-              <Thumbnail.Image src="brownscapular.jpg" />
-              <Thumbnail.Header>Brown Scapular</Thumbnail.Header>
-            </Thumbnail>
-        </div>
+        <Row label="scapular" content={scapulars} />
         <h2 className="title">Prayers</h2>
-        <div className="flex">
-            <div>
-                <Thumbnail link="/prayers/seven-dolours">
-                  <Thumbnail.Image src="brownscapular.jpg" />
-                  <Thumbnail.Header>Seven Dolours</Thumbnail.Header>
-                </Thumbnail>
-            </div>
-        </div>
+        <Row label="prayer" content={prayers} />
+        <h2 className="title">Resources</h2>
+        <Row label="resource" content={resources} />
     </div>
   );
 };

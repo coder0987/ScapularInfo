@@ -1,3 +1,11 @@
+import {
+  SevenSorrows,
+  ScapularBrown,
+  ScapularRedemptorist,
+  ScapularBenedict,
+  LittleOffice,
+} from "@/_root/pages";
+
 export const sidebarLinks = [
   {
     route: "/",
@@ -42,4 +50,62 @@ export const bottombarLinks = [
     route: "/resources",
     label: "Resources",
   },
+];
+
+export const scapularMenu = [
+    {
+        route: "",
+        label: "History"
+    },
+    {
+        route: "/blessings",
+        label: "Blessings"
+    },
+    {
+        route: "/construction",
+        label: "Construction"
+    },
+    {
+        route: "/requirements",
+        label: "Requirements"
+    },
+];
+
+export const scapulars = [
+    {
+        imgURL: "/brownscapular.jpg",
+        route: "/scapulars/brown-scapular",
+        label: "Brown Scapular",
+        element: ScapularBrown,
+    },
+    {
+        imgURL: "/brownscapular.jpg",
+        route: "/scapulars/redemptorist-scapular",
+        label: "Five-Fold Scapular",
+        element: ScapularRedemptorist,
+    },
+    {
+        imgURL: "/brownscapular.jpg",
+        route: "/scapulars/benedict-scapular",
+        label: "Benedictine Scapular",
+        element: ScapularBenedict,
+    },
+];
+
+export const prayers = [
+    {
+        imgURL: "/brownscapular.jpg",
+        route: "/prayers/seven-sorrows",
+        label: "Seven Sorrows",
+        element: SevenSorrows,
+    }
+];
+
+export const resources = [
+    {
+        imgURL: "/brownscapular.jpg",
+        route: "/resources/little-office",
+        label: "The Little Office",
+        element: LittleOffice,
+    }
 ];

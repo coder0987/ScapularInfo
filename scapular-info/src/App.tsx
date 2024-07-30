@@ -1,19 +1,20 @@
 import { Routes, Route } from "react-router-dom";
 
+import { scapulars, prayers, resources } from "@/constants";
+
 import {
   Home,
   Prayers,
-  SevenDolours,
   Scapulars,
-  BrownScapular,
+  ScapularRoot,
   Resources,
-  LittleOffice,
 } from "@/_root/pages";
 import RootLayout from "./_root/RootLayout";
 
 import { Toaster } from "@/components/ui/toaster";
 
 import "./globals.css";
+
 
 const App = () => {
   return (
@@ -24,15 +25,38 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/prayers">
             <Route index element={<Prayers />} />
-            <Route path="/prayers/seven-dolours" element={<SevenDolours />} />
+            {prayers.map(i => {
+              return (
+                <Route path={i.route} element={i.element()} key={"prayer-"+i.label} />
+              )
+            })
+          }
           </Route>
           <Route path="/scapulars">
             <Route index element={<Scapulars />} />
-            <Route path="/scapulars/brown-scapular" element={<BrownScapular />} />
+            {
+              scapulars.map(i => {
+                  console.log(i)
+                  return (
+                    <Route path={i.route} element={<ScapularRoot/>} key={"scapular-"+i.label}>
+                        <Route index element={i.element()} />
+                        <Route path={i.route+'/blessings'} element={i.element.blessings()} />
+                        <Route path={i.route+'/construction'} element={i.element.construction()} />
+                        <Route path={i.route+'/requirements'} element={i.element.requirements()} />
+                    </Route>
+                  )
+            })
+          }
           </Route>
           <Route path="/resources">
             <Route index element={<Resources />} />
-            <Route path="/resources/little-office" element={<LittleOffice />} />
+            {
+              resources.map(i => {
+                return (
+                  <Route path={i.route} element={i.element()} key={"resource-"+i.label} />
+                )
+              })
+            }
           </Route>
         </Route>
       </Routes>

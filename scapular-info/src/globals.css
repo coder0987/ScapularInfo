@@ -185,7 +185,7 @@
 
   /* Home */
   .home-container {
-    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
+    @apply flex flex-col flex-1 gap-10 overflow-auto py-10 px-5 md:px-4 lg:p-6 custom-scrollbar;
   }
 
   .home-posts {
@@ -235,14 +235,10 @@
     @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
   }
 
-  /* Bottom bar */
-  .bottom-bar {
-    @apply z-50 flex-between w-full sticky bottom-0 bg-dark-2 px-5 py-4 md:hidden;
-  }
-
   /* Title */
   .title {
-    @apply text-3xl font-semibold font-mono;
+    @apply text-3xl font-bold;
+    font-family: Optimistic Display,-apple-system,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   }
 
 
@@ -273,7 +269,7 @@
  }
 
  .thumbnail-header {
-
+    @apply text-xl;
  }
 
  .cover {
@@ -317,12 +313,21 @@
 
   /* Topbar */
   .topbar {
-    @apply sticky top-0 z-50 md:hidden bg-dark-2 w-full flex-center px-16;
+    @apply sticky top-0 z-50 md:hidden bg-dark-2 w-full flex-center px-4;
   }
 
   /* User card */
   .user-card {
     @apply flex-center flex-col gap-4 border border-dark-4 rounded-[20px] px-5 py-8;
+  }
+
+  /* Scapular Top bar */
+  .scap-nav-link {
+    @apply block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground;
+  }
+
+  .scap-nav-title {
+    @apply text-sm font-medium leading-none text-white;
   }
 }
 
