@@ -6,6 +6,12 @@ import Source from '@/components/shared/Source';
 const Sources = () => {
     const { list } = useContext(SourcesContext);
 
+    if (list.length === 0) {
+        return (
+            <> </>
+        );
+    }
+
     let slimSources = [];
     for (let i in sourcesList) {
         if (list.includes(i)) {
