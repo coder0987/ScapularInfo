@@ -10,7 +10,7 @@ const LeftSidebar = () => {
 
 
   return (
-    <nav className="leftsidebar">
+    <nav className="leftsidebar h-screen overflow-auto">
       <div className="flex flex-col gap-11 flex-center">
         <Link to="/" className="flex gap-3 items-center flex-col">
           <img

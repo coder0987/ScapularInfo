@@ -31,8 +31,8 @@ const ScapularTopMobile = () => {
   return (
     <section className="block w-full md:hidden">
           <div className="items-center w-full">
-            <NavigationMenu className="w-full max-w-none">
-              <NavigationMenuItem className="w-full">
+            <NavigationMenu className="w-full max-w-none list-none">
+              <NavigationMenuItem className="w-full list-none">
                 <NavigationMenuTrigger className="w-full">
                     {route}
                 </NavigationMenuTrigger>

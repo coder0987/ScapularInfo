@@ -6,6 +6,17 @@ import {
   LittleOffice,
 } from "@/_root/pages";
 
+export const sourcesList = {
+    scapularPrayerBook: {
+        ISBN: '1-936020-08-9',
+        date: 'October 1, 2007',
+        publisher: 'Aquinas Press',
+        author: 'Unknown',
+        editor: 'Bart Tesoriero',
+        name: 'Scapular Prayer Book'
+    }
+};
+
 export const sidebarLinks = [
   {
     route: "/",

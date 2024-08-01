@@ -1,12 +1,9 @@
 import ScapularTopMobile from "@/components/shared/ScapularTopMobile";
 import ScapularTopDesktop from "@/components/shared/ScapularTopDesktop";
+import Sources from "@/components/shared/Sources";
+import SourcesProvider from "@/components/shared/SourcesProvider";
 
 import { Outlet } from "react-router-dom";
-
-import {
-  FootnotesProvider,
-  Footnotes,
-} from 'react-a11y-footnotes'
 
 import 'react-a11y-footnotes/dist/styles.css'
 
@@ -16,12 +13,12 @@ const ScapularRoot = ({ children }) => {
             <ScapularTopMobile />
             <ScapularTopDesktop />
 
-            <FootnotesProvider>
+            <SourcesProvider>
                 <div>
                   <Outlet />
-                  <Footnotes />
+                  <Sources />
                 </div>
-            </FootnotesProvider>
+            </SourcesProvider>
         </div>
   );
 };
