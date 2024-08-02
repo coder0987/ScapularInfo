@@ -22,7 +22,7 @@ const Thumbnail = ({ children, link, className }) => {
 const Header = ({ children }) => {
   return (
       <CardHeader className="h-12 flex-center">
-       <CardTitle className="thumbnail-header">{children}</CardTitle>
+       <CardTitle className="thumbnail-header select-none">{children}</CardTitle>
       </CardHeader>
   );
 };
