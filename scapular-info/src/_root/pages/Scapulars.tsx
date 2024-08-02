@@ -12,11 +12,15 @@ const Scapulars = () => {
             <h2 className="title">Scapulars</h2>
             <h3>What is a Scapular?</h3>
 
-            <p classList="prose">
-                The word scapular comes from the Latin word scapula, meaning shoulder blade.
+            <p className="prose md:px-8">
+                A scapular is two small segments of cloth, connected by two cords which, when laid over the shoulders, places one segment on the chest and the other on the back
+                <SourcesCite source="catholicEncyclopediaScapular" className="italic">
+                    Catholic Encyclopedia: Scapular
+                </SourcesCite>.
+                The word scapular comes from the Latin word scapula, meaning shoulder blade
                 <SourcesCite source="scapularPrayerBook" className="italic">
                     Scapular Prayer Book
-                </SourcesCite>
+                </SourcesCite>.
             </p>
 
             <Row label="scapular" content={scapulars} />

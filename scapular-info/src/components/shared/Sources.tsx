@@ -6,6 +6,8 @@ import Source from '@/components/shared/Source';
 const Sources = () => {
     const { list } = useContext(SourcesContext);
 
+    console.log(list);
+
     if (list.length === 0) {
         return (
             <> </>
@@ -19,12 +21,14 @@ const Sources = () => {
         }
     }
 
+    console.log(slimSources);
+
     return (
         <div>
             <h2 className="title">Sources</h2>
             <ul>
                 {slimSources.map((item, index) => (
-                    <Source key={index} sourceJSON={sourcesList[item]} />
+                    <Source key={item} sourceJSON={sourcesList[item]} />
                 ))}
             </ul>
         </div>

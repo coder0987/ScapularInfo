@@ -4,9 +4,16 @@ import SourcesContext from '@/context/SourcesContext';
 const SourcesProvider = ( { children } ) => {
     const [list, updateList] = useState([]);
 
-    const addItem = (additionalSource) => {
-        updateList([...list, additionalSource]);
-    }
+    const addItem = (additionalSource: string) => {
+      console.log('Adding item:', additionalSource);
+      updateList(prevList => {
+        if (prevList.includes(additionalSource)) {
+          return prevList;
+        }
+        return [...prevList, additionalSource];
+      });
+    };
+
 
     const value = { list, addItem };
 

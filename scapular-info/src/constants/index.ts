@@ -13,8 +13,20 @@ export const sourcesList = {
         publisher: 'Aquinas Press',
         author: 'Unknown',
         editor: 'Bart Tesoriero',
-        name: 'Scapular Prayer Book'
-    }
+        name: 'Scapular Prayer Book',
+        link: 'Unknown',
+        website: 'Unknown',
+    },
+    catholicEncyclopediaScapular: {
+        ISBN: 'Unknown',
+        date: 'April 19, 1913',
+        publisher: 'Robert Appleton Company',
+        author: 'Unknown',
+        editor: 'Charles G. Herbermann, Ph.D., LL.D.',
+        name: 'The Catholic Encyclopedia: Scapular',
+        link: 'https://www.catholic.com/encyclopedia/scapular',
+        website: 'Catholic Answers',
+    },
 };
 
 export const sidebarLinks = [

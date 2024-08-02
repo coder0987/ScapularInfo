@@ -6,16 +6,20 @@ interface SourcesCiteProps {
 }
 
 const SourcesCite: React.FC<SourcesCiteProps> = ({ source, children, className }) => {
-  const { addItem } = useContext(SourcesContext);
+  const { addItem, list } = useContext(SourcesContext);
 
   useEffect(() => {
     if (source.trim()) {
-      console.log(source)
       addItem(source);
+      console.log(source)
     }
   }, [source]);
 
-  return <span className={className}> ({ children }) </span>;
+  useEffect(() => {
+      console.log('Current List:', list);
+    }, [list]);
+
+  return <span className={className}> ({ children })</span>;
 };
 
 export default SourcesCite;
