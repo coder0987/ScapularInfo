@@ -12,7 +12,7 @@ import {
 const Thumbnail = ({ children, link, className }) => {
   return (
       <Link className={className} to={link}>
-          <Card className="w-64 h-40 border divide-y-2 divide-black border-black cursor-pointer">
+          <Card className="w-64 h-40 border divide-y-2 divide-black border-black cursor-pointer select-none">
             {children}
           </Card>
       </Link>
@@ -30,7 +30,7 @@ const Header = ({ children }) => {
 const Image = ({ src }) => {
   return (
       <CardContent className="p-0">
-        <img src={src} className="fill w-full rounded-t-lg cover max-w-64 h-24"/>
+        <img src={src} className="fill w-full rounded-t-lg cover max-w-64 h-24 select-none"/>
       </CardContent>
   );
 };
