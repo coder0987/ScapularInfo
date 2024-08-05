@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 
 const ScapularRoot = ({ children }) => {
     return (
-        <div className="flex-col flex w-full">
+        <div className="flex-1 flex-col flex w-full">
             <ScapularTopMobile />
             <ScapularTopDesktop />
 

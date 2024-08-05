@@ -3,9 +3,9 @@ import Row from "@/components/shared/Row";
 import QuoteBox from "@/components/shared/QuoteBox";
 import { scapulars, prayers, resources } from "@/constants";
 
-const Home = () => {
+const Home = ({ className }) => {
   return (
-    <div className="flex flex-col gap-4 home-container items-center md:items-start">
+    <div className={`py-10 px-5 md:px-4 lg:p-6 flex-1 flex flex-col gap-4 items-center md:items-start`}>
         <QuoteBox className="italic">
             <div className="flex-row w-full flex">
                 <p className="flex text-2xl md:text-4xl">"One day,</p>

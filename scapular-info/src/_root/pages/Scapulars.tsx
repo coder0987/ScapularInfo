@@ -8,7 +8,7 @@ import { scapulars } from "@/constants";
 const Scapulars = () => {
   return (
     <SourcesProvider>
-        <div className="flex flex-col gap-6 home-container">
+        <div className="p-5 md:px-4 lg:p-6 flex-1 flex flex-col gap-6">
             <h2 className="title">Scapulars</h2>
             <h3>What is a Scapular?</h3>
 

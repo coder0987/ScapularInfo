@@ -185,7 +185,7 @@
 
   /* Home */
   .home-container {
-    @apply flex flex-col flex-1 gap-10 overflow-auto py-10 px-5 md:px-4 lg:p-6 custom-scrollbar;
+    @apply flex flex-col flex-1 gap-10 overflow-auto custom-scrollbar;
   }
 
   .home-posts {
@@ -332,7 +332,7 @@
 
   /* Scapular Top bar */
   .scap-nav-link {
-    @apply block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground;
+    @apply block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-primary-500;
   }
 
   .scap-nav-title {

@@ -42,8 +42,11 @@ const ScapularTopMobile = () => {
                         scapularMenu.map((link) => {
                             const isActive = link.label === route;
                             return (
-                                <Link key={'scapular-menu-'+link.label} to={linkBase + link.route} className="scap-nav-link w-full max-w-none focus:bg-transparent">
-                                  <p className={"scap-nav-title" + (isActive ? " underline": "")}>{link.label}</p>
+                                <Link key={'scapular-menu-'+link.label} to={linkBase + link.route} className="scap-nav-link w-full max-w-none">
+                                    <NavigationMenuLink asChild>
+                                      <p className={"scap-nav-title" + (isActive ? " underline": "")}>{link.label}</p>
+                                    </NavigationMenuLink>
+
                                 </Link>
                             );
                           })
