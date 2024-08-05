@@ -8,6 +8,8 @@ import {
   Scapulars,
   ScapularRoot,
   Resources,
+  FairUse,
+  License
 } from "@/_root/pages";
 import RootLayout from "./_root/RootLayout";
 
@@ -23,6 +25,8 @@ const App = () => {
         {/* public routes */}
         <Route element={<RootLayout />}>
           <Route index element={<Home />} />
+          <Route path="/fair-use" element={<FairUse />} />
+          <Route path="/license" element={<License />} />
           <Route path="/prayers">
             <Route index element={<Prayers />} />
             {prayers.map(i => {

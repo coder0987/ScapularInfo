@@ -11,3 +11,6 @@ export { default as ScapularRoot } from "./ScapularRoot";
 export { default as ScapularBrown } from "./ScapularBrown";
 export { default as ScapularBenedict } from "./ScapularBenedict";
 export { default as ScapularRedemptorist } from "./ScapularRedemptorist";
+
+export { default as FairUse } from "./FairUse";
+export { default as License } from "./License";
