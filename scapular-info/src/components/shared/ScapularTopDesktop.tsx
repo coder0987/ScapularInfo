@@ -1,19 +1,6 @@
 "use client"
 
 import { Link, useLocation } from "react-router-dom";
-import React from "react";
-import { cn } from "@/lib/utils"
-
-import { Button } from "../ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
 
 import { scapularMenu } from "@/constants";
 
@@ -47,7 +34,7 @@ const ScapularTopDesktop = () => {
 };
 
 
-const capitalizeFirstLetter = (string) => {
+const capitalizeFirstLetter = (string: string) => {
   if (typeof string !== 'string' || string.length === 0) return string;
   return string.charAt(0).toUpperCase() + string.slice(1);
 };

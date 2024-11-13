@@ -1,9 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 
-import { INavLink } from "@/types";
 import { sidebarLinks } from "@/constants";
-import { Loader } from "@/components/shared";
-import { Button } from "@/components/ui/button";
 
 const LeftSidebar = () => {
   const { pathname } = useLocation();
@@ -26,7 +23,7 @@ const LeftSidebar = () => {
         </Link>
 
         <ul className="flex flex-col gap-6">
-          {sidebarLinks.map((link: INavLink) => {
+          {sidebarLinks.map((link: { route: string; label: string; imgURL: string }) => {
             const isActive = link.route === '/' ? pathname === '/' : pathname.includes(link.route);
 
             return (

@@ -1,4 +1,4 @@
-const Source = ({ sourceJSON }) => {
+const Source = ({ sourceJSON }: any) => {
 
 
     const author    = (di(sourceJSON.author   ) ? '' : sourceJSON.author + '. '                 );
@@ -26,7 +26,7 @@ const Source = ({ sourceJSON }) => {
 
 
 // Don't display item
-function di(item) {
+function di(item: string | undefined) {
     if (typeof item === undefined || item === 'Unknown') {
         return true;
     }

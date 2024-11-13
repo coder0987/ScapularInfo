@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import SourcesContext from '@/context/SourcesContext';
 
-const SourcesProvider = ( { children } ) => {
+const SourcesProvider = ( { children }: { children: ReactNode } ) => {
     const [list, updateList] = useState([]);
 
     const addItem = (additionalSource: string) => {
       console.log('Adding item:', additionalSource);
-      updateList(prevList => {
+      updateList((prevList: string[]) => {
         if (prevList.includes(additionalSource)) {
           return prevList;
         }

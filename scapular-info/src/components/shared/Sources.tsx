@@ -1,4 +1,4 @@
-import { sourcesList } from "@/constants";
+import { sourcesList, source } from "@/constants";
 import { useContext } from 'react';
 import SourcesContext from '@/context/SourcesContext';
 import Source from '@/components/shared/Source';
@@ -27,7 +27,7 @@ const Sources = () => {
         <div>
             <h2 className="title">Sources</h2>
             <ul>
-                {slimSources.map((item, index) => (
+                {slimSources.map((item) => (
                     <Source key={item} sourceJSON={sourcesList[item]} />
                 ))}
             </ul>

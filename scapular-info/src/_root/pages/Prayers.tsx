@@ -1,4 +1,3 @@
-import Thumbnail from "@/components/shared/Thumbnail";
 import Row from "@/components/shared/Row";
 import { prayers } from "@/constants";
 

@@ -6,6 +6,20 @@ import {
   LittleOffice,
 } from "@/_root/pages";
 
+export interface source {
+    ISBN: string;
+    date: string;
+    publisher: string;
+    author: string;
+    editor: string;
+    name: string;
+    link: string;
+    website: string;
+    nihilObstat: string;
+    imprimatur: string;
+    imprimiPotest: string;
+};
+
 export const sourcesList = {
     scapularPrayerBook: {
         ISBN: '1-936020-08-9',
@@ -16,6 +30,9 @@ export const sourcesList = {
         name: 'Scapular Prayer Book',
         link: 'Unknown',
         website: 'Unknown',
+        nihilObstat: 'Reverend Francis Vivona, S.T.M., J.C.L',
+        imprimatur: 'Most Reverend Joseph A. Pepe, D.D., J.C.D',
+        imprimiPotest: 'Unknown'
     },
     catholicEncyclopediaScapular: {
         ISBN: 'Unknown',
@@ -26,7 +43,23 @@ export const sourcesList = {
         name: 'The Catholic Encyclopedia: Scapular',
         link: 'https://www.catholic.com/encyclopedia/scapular',
         website: 'Catholic Answers',
+        nihilObstat: 'Remy Lafort, S.T.D',
+        imprimatur: '+ John Cardinal Farley, Archbishop of New York',
+        imprimiPotest: 'Unknown'
     },
+    fiveScapulars: {
+        ISBN: 'Unknown',
+        date: 'January 1957',
+        publisher: 'Unknown',
+        author: 'Raymond J. Miller, C.SS.R',
+        editor: 'Unknown',
+        name: 'The Five Scapulars',
+        link: 'https://archive.org/details/five-scapulars',
+        website: 'Internet Archive',
+        nihilObstat: 'Unknown',
+        imprimatur: '+ Joseph E. Ritter, Archbishop of St. Louis',
+        imprimiPotest: 'John N. McCormick, C.SS.R. Provincial, St. Louis Province, Redemptorist Fathers'
+    }
 };
 
 export const sidebarLinks = [

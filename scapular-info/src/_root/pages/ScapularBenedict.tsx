@@ -1,6 +1,3 @@
-import {
-  FootnoteRef as Ref,
-} from "react-a11y-footnotes";
 
 const ScapularBenedict = () => {
   return (

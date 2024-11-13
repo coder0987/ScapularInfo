@@ -2,7 +2,7 @@ import { createContext } from 'react';
 
 const SourcesContext = createContext({
   list: [], 
-  addItem: () => {}
+  addItem: (item: any) => {}
 });
 
 export default SourcesContext;

@@ -3,6 +3,8 @@ import SourcesContext from '@/context/SourcesContext';
 
 interface SourcesCiteProps {
   source: string;
+  children: ReactNode;
+  className: string;
 }
 
 const SourcesCite: React.FC<SourcesCiteProps> = ({ source, children, className }) => {

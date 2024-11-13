@@ -89,6 +89,15 @@
     @apply text-[16px] font-normal leading-[140%];
   }
 
+  .paragraph-regular {
+    @apply text-[19px] font-normal leading-[140%] text-justify;
+    font-family: Georgia,helvetica,sans-serif;
+  }
+  .pr {
+    @apply text-[19px] font-normal leading-[140%] text-justify;
+    font-family: Georgia,helvetica,sans-serif;
+  }
+
   .base-large {
     @apply text-[32px] font-medium leading-[140%];
   }
