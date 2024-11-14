@@ -47,7 +47,7 @@ ScapularBrown.construction = () => {
         <div className="flex flex-col items-start justify-start space-y-4">
             <ol className="list-decimal pr pl-6">
               <li>Two pieces of 100% woven brown wool</li>
-              <li>A cord (any color) of wool</li>
+              <li>A cord (any color) of wool or some other material</li>
               <li>Pictures are unnecessary, but usually St. Simon Stock on one side and Our Lady of Mt. Carmel on the other</li>
               <li>May be wrapped in plastic</li>
             </ol>

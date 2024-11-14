@@ -59,7 +59,7 @@ ScapularGreen.construction = () => {
         <div className="flex flex-col items-start justify-start space-y-4">
             <ol className="list-decimal pr pl-6">
                 <li>Two pieces of green wool</li>
-                <li>A green wool cord</li>
+                <li>A green wool cord or some other material</li>
                 <li>Images of Our Lady on one side and the Immaculate Heart on the other. The Immaculate Heart should be surrounded by the prayer "Immaculate heart of Mary, pray for us now and at the hour of our death."</li>
                 <li>May be wrapped in plastic</li>
             </ol>

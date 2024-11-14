@@ -53,7 +53,7 @@ ScapularBenedict.construction = () => {
         <div className="flex flex-col items-start justify-start space-y-4">
             <ol className="list-decimal pr pl-6">
               <li>Two pieces of brown or black wool</li>
-              <li>A cord (any color, usually black) of wool</li>
+              <li>A cord (any color, usually black) of wool or some other material</li>
               <li>Pictures are unnecessary, but usually the two sides of the benedictine medal or an image of St. Benedict</li>
               <li>May be wrapped in plastic</li>
             </ol>
@@ -82,7 +82,6 @@ ScapularBenedict.requirements = () => {
             <li>To wear a small scapular, properly blessed</li>
             <li>Every night, to make an examination of conscience and put oneself in the disposition of mind and affection, in which, by God's grace, one no longer fears death</li>
             <li>To say every night 3 Our Fathers, 3 Hail Marys, and one Creed for the exaltation and happy success of the Catholic, Apostolic, and Roman Church</li>
-            <li>Observe with great chastity the 6th and 9th commandments</li>
           </ol>
           <p className="pr">
             Proper use of the scapular demands that these requirements should not be treated like checkboxes which, when completed, guarantee salvation.

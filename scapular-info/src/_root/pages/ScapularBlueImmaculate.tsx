@@ -60,7 +60,7 @@ ScapularBlue.construction = () => {
         <div className="flex flex-col items-start justify-start space-y-4">
             <ol className="list-decimal pr pl-6">
                 <li>Blue wool</li>
-                <li>Wool cord (usually red but color doesn't matter)</li>
+                <li>Wool, or some other material, cord (usually red but color doesn't matter)</li>
                 <li>Pictures are usually of pregnant Mary or the Immaculate Conception on one side and Mary's name on the other but aren't required</li>
                 <li>May be encased in plastic</li>
             </ol>

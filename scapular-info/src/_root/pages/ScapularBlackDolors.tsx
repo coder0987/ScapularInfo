@@ -44,7 +44,7 @@ ScapularBlack.construction = () => {
         <div className="flex flex-col items-start justify-start space-y-4">
             <ol className="list-decimal pr pl-6">
                 <li>Two pieces of black wool</li>
-                <li>Wool cord (any color)</li>
+                <li>Wool cord (any color) or some other material</li>
                 <li>Front is usually Our Lady of Sorrows but no images are required</li>
                 <li>May be encased in plastic</li>
             </ol>
