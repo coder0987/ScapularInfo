@@ -2,8 +2,8 @@ import SourcesCite from "@/components/shared/SourcesCite";
 
 const ScapularBrown = () => {
   return (
-    <div className="flex flex-col gap-6 m-2">
-        <h2 className="title">Brown Scapular</h2>
+    <div className="flex flex-col gap-6 m-2 md:m-6">
+        <h2 className="title text-center md:text-left">Brown Scapular</h2>
         <div className="flex flex-col items-start justify-start space-y-4">
             <p className="pr">
               In July 1251, Our Lady of Mt. Carmel appeared to St. Simon Stock bearing a message and a gift.
@@ -26,7 +26,7 @@ const ScapularBrown = () => {
 ScapularBrown.blessings = () => {
   return (
     <div className="flex flex-col gap-6 m-2 md:m-6">
-        <h2 className="title">Brown Scapular Blessings</h2>
+        <h2 className="title text-center md:text-left">Brown Scapular Blessings</h2>
         <div className="flex flex-col items-start justify-start space-y-4">
             <ol className="list-decimal pr pl-6">
               <li> Protection from death while not in a state of grace</li>
@@ -43,7 +43,7 @@ ScapularBrown.blessings = () => {
 ScapularBrown.construction = () => {
   return (
     <div className="flex flex-col gap-6 m-2 md:m-6">
-        <h2 className="title">Brown Scapular Construction</h2>
+        <h2 className="title text-center md:text-left">Brown Scapular Construction</h2>
         <div className="flex flex-col items-start justify-start space-y-4">
             <ol className="list-decimal pr pl-6">
               <li>Two pieces of 100% woven brown wool</li>
@@ -58,10 +58,20 @@ ScapularBrown.construction = () => {
 
 ScapularBrown.requirements = () => {
   return (
-    <div className="flex flex-col gap-6 m-2">
-        <h2 className="title">Brown Scapular Requirements</h2>
+    <div className="flex flex-col gap-6 m-2 md:m-6">
+        <h2 className="title text-center md:text-left">Brown Scapular Requirements</h2>
         <div className="flex flex-col items-start justify-start space-y-4">
           <p className="pr">Certain requirements must be met to receive the blessings and indulgences associated with the brown scapular</p>
+          <p className="pr">General Requirements (applies to all scapulars)</p>
+          <ol className="list-decimal pr pl-6">
+          <li>Live chastely</li>
+          <li>Wear the scapular</li>
+          <li>Be Catholic</li>
+          <li>Live in a state of grace</li>
+          <li>Support and pray for the corresponding confraternity (The Carmelites)</li>
+          <li>Be invested in the scapular by any Catholic priest</li>
+          </ol>
+          <p className="pr">Specific Requirements (applies only to the brown scapular)</p>
           <ol className="list-decimal pr pl-6">
             <li>Pray daily the Little Office of the Blessed Virgin Mary or another form of the Divine Office</li>
             <li>Or abstain from meat on Wednesdays, Fridays, and Saturdays</li>

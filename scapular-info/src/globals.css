@@ -340,8 +340,12 @@
   }
 
   /* Scapular Top bar */
+  .scap-nav-bar {
+    @apply bg-off-white;
+  }
+
   .scap-nav-link {
-    @apply block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-primary-500;
+    @apply block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none text-[28px] transition-colors hover:bg-primary-500;
   }
 
   .scap-nav-title {

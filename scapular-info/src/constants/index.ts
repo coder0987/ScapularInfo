@@ -2,7 +2,11 @@ import {
   SevenSorrows,
   ScapularBrown,
   ScapularRedemptorist,
+  ScapularRed,
   ScapularBenedict,
+  ScapularBlue,
+  ScapularGreen,
+  ScapularBlackDolors,
   LittleOffice,
 } from "@/_root/pages";
 
@@ -59,7 +63,98 @@ export const sourcesList = {
         nihilObstat: 'Unknown',
         imprimatur: '+ Joseph E. Ritter, Archbishop of St. Louis',
         imprimiPotest: 'John N. McCormick, C.SS.R. Provincial, St. Louis Province, Redemptorist Fathers'
-    }
+    },
+    greenScapularCC: {
+      ISBN: 'Unknown',
+      date: 'September 29, 2017',
+      publisher: 'The Catholc Company',
+      author: 'Ashley Olik',
+      editor: 'Unknown',
+      name: 'Guide to the Green Scapular: A Powerful (and Surprisingly Simple) Devotion',
+      link: 'https://www.catholiccompany.com/magazine/green-scapular-devotion-6141',
+      website: 'The Catholic Company',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    greenScapular: {
+      ISBN: 'Unknown',
+      date: '2023',
+      publisher: 'Society of the Green Scapular',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'What is the Green Scapular?',
+      link: 'https://www.greenscapular.com/',
+      website: 'Society of the Green Scapular',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    greenScapularFavors: {
+      ISBN: 'Unknown',
+      date: '1923',
+      publisher: 'Society of the Green Scapular',
+      author: 'Rev Father Marie Edouard Mott C.M.',
+      editor: 'Unknown',
+      name: 'The Green Scapular and Its Favors',
+      link: 'https://www.greenscapular.com/pdf/Green-Scapular-and-Its-Favors_MOTT.pdf',
+      website: 'Society of the Green Scapular',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    blackScapularMaryPages: {
+      ISBN: 'Unknown',
+      date: 'Unknown',
+      publisher: 'Foundation Marypages',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'Black Scapular of the Seven Sorrows of Mary',
+      link: 'https://www.marypages.com/black-scapular.html',
+      website: 'Mary Pages',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    blueScapularPadriMariani: {
+      ISBN: 'Unknown',
+      date: 'Unknown',
+      publisher: 'Marians of the Immaculate Conception',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'Scapular of the Immaculate Concpetion',
+      link: 'https://padrimariani.org/en/the-blue-scapular/',
+      website: 'Padri Mariani - Marians of the Immaculate Conception',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    redScapularMaryPages: {
+      ISBN: 'Unknown',
+      date: 'Unknown',
+      publisher: 'Foundation Marypages',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'Red Scapular of the Passion',
+      link: 'https://www.marypages.com/red-scapular.html',
+      website: 'Mary Pages',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    manualOfDevotions: {
+      ISBN: 'Unknown',
+      date: '1861',
+      publisher: 'Catholic Publishing & Bookselling Company, Limited',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'A Manual of Devotions to Our Holy Father Saint Benedict, Abbot and Patriarch of the Western Monks; to His Sister Saint Scholastica, Virgin and Abbess; and to All Saints of His Holy Order',
+      link: 'https://books.google.com/books?id=QVl2gto5TIQC&dq=Scapular+of+Saint+Benedict&pg=PA212',
+      website: 'Google Books',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Domnus Placidus Burchall',
+      imprimiPotest: 'Unknown'
+    },
 };
 
 export const sidebarLinks = [
@@ -145,6 +240,30 @@ export const scapulars = [
         route: "/scapulars/benedict-scapular",
         label: "Benedictine Scapular",
         element: ScapularBenedict,
+    },
+    {
+      imgURL: "/brownscapular.jpg",
+      route: "/scapulars/green-scapular",
+      label: "Green Scapular",
+      element: ScapularGreen,
+    },
+    {
+      imgURL: "/brownscapular.jpg",
+      route: "/scapulars/black-scapular",
+      label: "Black Scapular",
+      element: ScapularBlackDolors,
+    },
+    {
+      imgURL: "/brownscapular.jpg",
+      route: "/scapulars/blue-scapular",
+      label: "Blue Scapular",
+      element: ScapularBlue,
+    },
+    {
+      imgURL: "/brownscapular.jpg",
+      route: "/scapulars/red-scapular",
+      label: "Red Scapular",
+      element: ScapularRed,
     },
 ];
 

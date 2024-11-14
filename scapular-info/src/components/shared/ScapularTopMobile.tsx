@@ -28,7 +28,7 @@ const ScapularTopMobile = () => {
           <div className="items-center w-full">
             <NavigationMenu className="w-full max-w-none list-none">
               <NavigationMenuItem className="w-full list-none">
-                <NavigationMenuTrigger className="w-full">
+                <NavigationMenuTrigger className="w-full scap-nav-bar">
                     {route}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="w-full max-w-none">
