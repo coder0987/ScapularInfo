@@ -1,4 +1,5 @@
 import SourcesCite from "@/components/shared/SourcesCite";
+import { Link } from "react-router-dom";
 
 const ScapularGreen = () => {
   return (
@@ -63,6 +64,12 @@ ScapularGreen.construction = () => {
                 <li>Images of Our Lady on one side and the Immaculate Heart on the other. The Immaculate Heart should be surrounded by the prayer "Immaculate heart of Mary, pray for us now and at the hour of our death."</li>
                 <li>May be wrapped in plastic</li>
             </ol>
+            <p className="pr">
+              Further details can be found <Link to="/scapulars/construction" className="text-sky-500">here</Link>
+            </p>
+            <p className="pr">
+              After investment, any number of small scapulars may be replaced by a single properly made <Link to="/scapulars/medal" className="text-sky-500">medal</Link>, although a proper wool scapular is generally preferable
+            </p>
         </div>
     </div>
   );

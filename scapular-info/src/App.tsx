@@ -9,7 +9,9 @@ import {
   ScapularRoot,
   Resources,
   FairUse,
-  License
+  License,
+  ScapularConstruction,
+  ScapularMedal
 } from "@/_root/pages";
 import RootLayout from "./_root/RootLayout";
 
@@ -38,6 +40,8 @@ const App = () => {
           </Route>
           <Route path="/scapulars">
             <Route index element={<Scapulars />} />
+            <Route path="/scapulars/construction" element={<ScapularConstruction />} />
+            <Route path="/scapulars/medal" element={<ScapularMedal />} />
             {
               scapulars.map(i => {
                   console.log(i)

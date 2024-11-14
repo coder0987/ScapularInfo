@@ -1,4 +1,5 @@
 import SourcesCite from "@/components/shared/SourcesCite";
+import { Link } from "react-router-dom";
 
 const ScapularBrown = () => {
   return (
@@ -51,6 +52,12 @@ ScapularBrown.construction = () => {
               <li>Pictures are unnecessary, but usually St. Simon Stock on one side and Our Lady of Mt. Carmel on the other</li>
               <li>May be wrapped in plastic</li>
             </ol>
+            <p className="pr">
+              Further details can be found <Link to="/scapulars/construction" className="text-sky-500">here</Link>
+            </p>
+            <p className="pr">
+              After investment, any number of small scapulars may be replaced by a single properly made <Link to="/scapulars/medal" className="text-sky-500">medal</Link>, although a proper wool scapular is generally preferable
+            </p>
         </div>
     </div>
   );

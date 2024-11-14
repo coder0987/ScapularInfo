@@ -1,4 +1,5 @@
 import SourcesCite from "@/components/shared/SourcesCite";
+import { Link } from "react-router-dom";
 
 const ScapularRed = () => {
   return (
@@ -57,6 +58,12 @@ ScapularRed.construction = () => {
             </p>
             <p className="pr">
                 The image on the back must be the Sacred Hearst of Jesus and Mary, the one surrounded with thorns and the other pierced by a sword, and both surrounded by a cross. They should be surrounded by the prayer "Sacred Hearts of Jesus and Mary, protect Us."
+            </p>
+            <p className="pr">
+              Further details can be found <Link to="/scapulars/construction" className="text-sky-500">here</Link>
+            </p>
+            <p className="pr">
+              After investment, any number of small scapulars may be replaced by a single properly made <Link to="/scapulars/medal" className="text-sky-500">medal</Link>, although a proper wool scapular is generally preferable
             </p>
         </div>
     </div>

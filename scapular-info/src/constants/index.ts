@@ -8,6 +8,7 @@ import {
   ScapularGreen,
   ScapularBlackDolors,
   LittleOffice,
+  ScapularWhite,
 } from "@/_root/pages";
 
 export interface source {
@@ -264,6 +265,12 @@ export const scapulars = [
       route: "/scapulars/red-scapular",
       label: "Red Scapular",
       element: ScapularRed,
+    },
+    {
+      imgURL: "/brownscapular.jpg",
+      route: "/scapulars/white-scapular",
+      label: "White Scapular",
+      element: ScapularWhite,
     },
 ];
 
