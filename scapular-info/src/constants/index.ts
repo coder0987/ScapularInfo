@@ -9,7 +9,7 @@ import {
   ScapularBlackDolors,
   LittleOffice,
   ScapularWhite,
-  SevenSorrowsJesus
+  SevenWoundsJesus
 } from "@/_root/pages";
 
 export interface source {
@@ -310,9 +310,10 @@ export const prayers = [
     },
     {
       imgURL: "/brownscapular.jpg",
-      route: "/prayers/seven-sorrows-jesus",
-      label: "Seven Sorrows of Jesus",
-      element: SevenSorrowsJesus,
+      route: "/prayers/seven-wounds-jesus",
+      alias: "/prayers/seven-sorrows-jesus",
+      label: "Seven Wounds of Jesus",
+      element: SevenWoundsJesus,
     },
 ];
 

@@ -2,11 +2,11 @@ import Sources from "@/components/shared/Sources";
 import SourcesCite from "@/components/shared/SourcesCite";
 import SourcesProvider from "@/components/shared/SourcesProvider";
 
-const SevenSorrowsJesus = () => {
+const SevenWoundsJesus = () => {
     return (
         <SourcesProvider>
             <div className="p-5 md:px-4 lg:p-6 flex-1 flex flex-col gap-6 m-2">
-                <h2 className="title">Seven Sorrows of Jesus</h2>
+                <h2 className="title">Seven Wounds of Jesus</h2>
                 <div className="flex flex-col items-start justify-start space-y-4">
                     <p className="pr">The Twelve Year Prayers of St. Bridget on the Passion of Jesus</p>
                     <p className="pr">
@@ -112,4 +112,4 @@ const SevenSorrowsJesus = () => {
     );
   };
   
-  export default SevenSorrowsJesus;
+  export default SevenWoundsJesus;

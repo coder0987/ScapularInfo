@@ -33,7 +33,12 @@ const App = () => {
             <Route index element={<Prayers />} />
             {prayers.map(i => {
               return (
-                <Route path={i.route} element={i.element()} key={"prayer-"+i.label} />
+                <>
+                  { typeof i.alias !== undefined ?
+                    <Route path={i.alias} element={i.element()} key={"prayer-alias-"+i.label} />
+                    : <></>}
+                  <Route path={i.route} element={i.element()} key={"prayer-"+i.label} />
+                  </>
               )
             })
           }
@@ -61,7 +66,12 @@ const App = () => {
             {
               resources.map(i => {
                 return (
+                  <>
+                  { typeof i.alias !== undefined ?
+                    <Route path={i.alias} element={i.element()} key={"resource-alias-"+i.label} />
+                    : <></>}
                   <Route path={i.route} element={i.element()} key={"resource-"+i.label} />
+                  </>
                 )
               })
             }
