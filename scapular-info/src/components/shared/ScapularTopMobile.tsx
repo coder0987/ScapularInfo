@@ -10,9 +10,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-import { scapularMenu } from "@/constants";
-
-const ScapularTopMobile = () => {
+const ScapularTopMobile = ({ menu } : { menu: {route: string; label: string;}[] }) => {
   const { pathname } = useLocation();
 
   const splitPath = pathname.split('/');
@@ -34,7 +32,7 @@ const ScapularTopMobile = () => {
                 <NavigationMenuContent className="w-full max-w-none">
                   <div className="grid gap-3 p-6 list-none bg-black w-full max-w-none">
                       {
-                        scapularMenu.map((link) => {
+                        menu.map((link) => {
                             const isActive = link.label === route;
                             return (
                                 <Link key={'scapular-menu-'+link.label} to={linkBase + link.route} className="scap-nav-link w-full max-w-none">

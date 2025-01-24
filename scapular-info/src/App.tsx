@@ -67,10 +67,17 @@ const App = () => {
               resources.map(i => {
                 return (
                   <>
-                  { typeof i.alias !== undefined ?
-                    <Route path={i.alias} element={i.element()} key={"resource-alias-"+i.label} />
-                    : <></>}
-                  <Route path={i.route} element={i.element()} key={"resource-"+i.label} />
+                  { typeof i.subroutes !== undefined ?
+                    <Route path={i.route} element={i.element()} key={"resource-"+i.label}>
+                      {i.subroutes.map(j => {
+                        return (
+                          j.route === '' ? <Route index element={j.element()} />
+                            : <Route path={i.route+j.route} element={j.element()} />
+                        )
+                      })}
+                    </Route>
+                    : 
+                  <Route path={i.route} element={i.element()} key={"resource-"+i.label} />}
                   </>
                 )
               })

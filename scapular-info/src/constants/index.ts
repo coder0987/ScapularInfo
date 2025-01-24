@@ -250,6 +250,25 @@ export const scapularMenu = [
     },
 ];
 
+export const littleOfficeMenu = [
+  {
+      route: "",
+      label: "History",
+      element: LittleOffice.History
+  },
+  {
+      route: "/blessings",
+      label: "Blessings",
+      element: LittleOffice.Blessings
+  },
+  {
+      route: "/rubrics",
+      label: "Rubrics",
+      element: LittleOffice.Rubrics
+  },
+];
+
+
 export const scapulars = [
     {
         imgURL: "/brownscapular.jpg",
@@ -323,5 +342,6 @@ export const resources = [
         route: "/resources/little-office",
         label: "The Little Office",
         element: LittleOffice,
+        subroutes: littleOfficeMenu
     }
 ];

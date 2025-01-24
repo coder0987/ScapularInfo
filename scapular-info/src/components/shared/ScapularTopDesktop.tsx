@@ -2,9 +2,7 @@
 
 import { Link, useLocation } from "react-router-dom";
 
-import { scapularMenu } from "@/constants";
-
-const ScapularTopDesktop = () => {
+const ScapularTopDesktop = ({ menu } : { menu: {route: string; label: string;}[] }) => {
   const { pathname } = useLocation();
 
   const splitPath = pathname.split('/');
@@ -19,7 +17,7 @@ const ScapularTopDesktop = () => {
     <section className="md:block w-full hidden bg-primary-600">
         <div className="flex-between py-4 px-5">
           {
-            scapularMenu.map((link) => {
+            menu.map((link) => {
                 const isActive = link.label === route;
                 return (
                     <Link key={'scapular-menu-'+link.label} to={linkBase + link.route} className="scap-nav-link w-1/5 max-w-none focus:bg-transparent hover:bg-primary-500">
