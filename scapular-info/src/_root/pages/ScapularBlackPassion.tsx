@@ -29,7 +29,7 @@ ScapularBlackPassion.blessings = () => {
     <div className="flex flex-col gap-6 m-2 md:m-6">
         <h2 className="title text-center md:text-left">Black Scapular of the Passion Blessings</h2>
         <div className="flex flex-col items-start justify-start space-y-4">
-            <p className="pr">Those who wear the Black Scapular of the Passion can receive a Plenary Indulgence under the usual conditions* on the following days:</p>
+            <p className="pr">Those who wear the Black Scapular of the Passion can receive a Plenary Indulgence under the usual conditions* at the following times:</p>
             <ul className="list-disc pr pl-6">
                 <li>The day of investiture with the scapular</li>
                 <ul className="list-disc pr pl-6">
@@ -45,8 +45,8 @@ ScapularBlackPassion.blessings = () => {
                 <ul className="list-disc pr pl-6">
                     <li>Sundays and Ember Days of Advent</li>
                     <li>Christmas</li>
-                    <li>St. Stephen</li>
-                    <li>St. John the Apostle and Evangelist</li>
+                    <li>Feast of St. Stephen</li>
+                    <li>Feast of St. John the Apostle and Evangelist</li>
                     <li>Holy Innocents</li>
                     <li>Circumcision</li>
                     <li>Epiphany</li>
@@ -56,7 +56,7 @@ ScapularBlackPassion.blessings = () => {
                     <li>The Vigil of Pentecost, and the six days following</li>
                     <li>The Ember Days of September</li>
                 </ul>
-                <li>On certain days, when visiting a church belonging to the Passionist Order or the Confraternity of the Passion on there praying:</li>
+                <li>On certain days, when visiting a church belonging to the Passionist Order or the Confraternity of the Passion and there praying:</li>
                 <ul className="list-disc pr pl-6">
                     <li>For the peace of Christian Princes</li>
                     <li>And for the extripation of heresies</li>
@@ -147,9 +147,9 @@ ScapularBlackPassion.requirements = () => {
             <li>Support and pray for the corresponding confraternity (The Congregation of the Holy Cross and Passion of Our Lord Jesus Christ)</li>
             <li>Be invested in the scapular by a qualified Catholic Priest (One given such faculty by the General of the Passionists)</li>
           </ol>
+          <p className="subtitle">Specific Requirements (applies only to the black scapular)</p>
           <p className="pr">The specific rite of blessing and imposing this scapular is quite long, and a simple sign of the cross does not suffice</p>
           <p className="pr">Additionally, the priest who blesses the scapular must place it over the recipient's shoulders (or on one shoulder)</p>
-          <p className="subtitle">Specific Requirements (applies only to the black scapular)</p>
           <p className="pr">No special prayers or devotions are required, but the following are recommended</p>
           <ol className="list-decimal pr pl-6">
             <li>Meditate for at least 15 minutes every day on the Sufferings of Our Lord</li>
