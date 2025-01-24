@@ -3,6 +3,7 @@ import SourcesCite from "@/components/shared/SourcesCite";
 import Sources from "@/components/shared/Sources";
 import SourcesProvider from "@/components/shared/SourcesProvider";
 import { scapulars } from "@/constants";
+import CompiledNotice from "@/components/shared/CompiledNotice";
 
 const Scapulars = () => {
   return (
@@ -24,6 +25,7 @@ const Scapulars = () => {
 
             <Row label="scapular" content={scapulars} />
             <Sources />
+            <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
         </div>
     </SourcesProvider>
   );

@@ -14,7 +14,7 @@ const Footer = () => {
               height="12px"
               className="rounded inline-block align-middle pb-1"
             />
-            <span className=""> 2024 Samuel Mach. No rights reserved. </span>
+            <span className=""> 2025 Samuel Mach. No rights reserved. </span>
             <span className="underline">View the License</span>
           </span>
         </Link>

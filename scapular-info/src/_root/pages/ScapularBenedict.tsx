@@ -1,3 +1,4 @@
+import CompiledNotice from "@/components/shared/CompiledNotice";
 import SourcesCite from "@/components/shared/SourcesCite";
 import { Link } from "react-router-dom";
 
@@ -20,6 +21,7 @@ const ScapularBenedict = () => {
               </SourcesCite>.
             </p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };
@@ -43,6 +45,7 @@ ScapularBenedict.blessings = () => {
                 <li>Pray for the intentions of the Holy Father.</li>
             </ul>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };
@@ -65,6 +68,7 @@ ScapularBenedict.construction = () => {
               After investment, any number of small scapulars may be replaced by a single properly made <Link to="/scapulars/medal" className="text-sky-500">medal</Link>, although a proper wool scapular is generally preferable
             </p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };
@@ -96,6 +100,7 @@ ScapularBenedict.requirements = () => {
             These requirements are meant to act as guidelines to grow your faith and relationship with the Blessed Virgin Mary.
           </p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };

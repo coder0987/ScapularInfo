@@ -1,3 +1,4 @@
+import CompiledNotice from "@/components/shared/CompiledNotice";
 import SourcesCite from "@/components/shared/SourcesCite";
 import { Link } from "react-router-dom";
 
@@ -18,6 +19,7 @@ const ScapularRed = () => {
               </SourcesCite>.
             </p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };
@@ -34,6 +36,7 @@ ScapularRed.blessings = () => {
             <p className="pr">The red scapular "will prove to us a strong armor against infernal assaults, an impenetrable buckler against the arrows of our spiritual enemies and, according to the testimony of Jesus Christ, to all who wear it with faith and piety it will be a pledge of pardon, a source of grace. "</p>
             <p className="pr">There are also indulgences associated with the red scapular</p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };
@@ -66,6 +69,7 @@ ScapularRed.construction = () => {
               After investment, any number of small scapulars may be replaced by a single properly made <Link to="/scapulars/medal" className="text-sky-500">medal</Link>, although a proper wool scapular is generally preferable
             </p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };
@@ -97,6 +101,7 @@ ScapularRed.requirements = () => {
             These requirements are meant to act as guidelines to grow your faith and relationship with the Blessed Virgin Mary.
           </p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };

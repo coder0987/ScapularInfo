@@ -1,3 +1,4 @@
+import CompiledNotice from "@/components/shared/CompiledNotice";
 import PlenaryIndulgence from "@/components/shared/PlenaryIndulgence";
 import SourcesCite from "@/components/shared/SourcesCite";
 import { Link } from "react-router-dom";
@@ -20,6 +21,7 @@ const ScapularBlackPassion = () => {
               </SourcesCite>.
             </p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Jan. 2025" />
     </div>
   );
 };
@@ -98,6 +100,7 @@ ScapularBlackPassion.blessings = () => {
             <SourcesCite source="blackScapularOurScapular" className="hidden">Our Scapular</SourcesCite>
             <PlenaryIndulgence />
         </div>
+        <CompiledNotice author="Samuel Mach" date="Jan. 2025" />
     </div>
   );
 };
@@ -128,6 +131,7 @@ ScapularBlackPassion.construction = () => {
               After investment, any number of small scapulars may be replaced by a single properly made <Link to="/scapulars/medal" className="text-sky-500">medal</Link>, although a proper wool scapular is generally preferable
             </p>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Jan. 2025" />
     </div>
   );
 };
@@ -164,6 +168,7 @@ ScapularBlackPassion.requirements = () => {
           <SourcesCite source="blackScapularCatholicTelegraph" className="hidden">The Catholic Telegraph</SourcesCite>
           <SourcesCite source="blackScapularOurScapular" className="hidden">Our Scapular</SourcesCite>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Jan. 2025" />
     </div>
   );
 };

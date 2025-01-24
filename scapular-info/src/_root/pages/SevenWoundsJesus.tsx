@@ -1,3 +1,4 @@
+import CompiledNotice from "@/components/shared/CompiledNotice";
 import Sources from "@/components/shared/Sources";
 import SourcesCite from "@/components/shared/SourcesCite";
 import SourcesProvider from "@/components/shared/SourcesProvider";
@@ -106,6 +107,7 @@ const SevenWoundsJesus = () => {
                     <></>
                 </SourcesCite>
             <Sources />
+            <CompiledNotice author="Samuel Mach" date="Jan. 2025" />
             </div>
             
         </SourcesProvider>

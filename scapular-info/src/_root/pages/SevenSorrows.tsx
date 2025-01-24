@@ -1,3 +1,5 @@
+import CompiledNotice from "@/components/shared/CompiledNotice";
+
 const SevenSorrows = () => {
   return (
     <div className="p-5 md:px-4 lg:p-6 flex-1 flex flex-col gap-6 m-2">
@@ -34,6 +36,7 @@ const SevenSorrows = () => {
               <li>He would commit such devout clients to the hands of Mary, with the power to dispose of them in whatever manner she might please, and to obtain for them all the graces she might desire.</li>
             </ol>
         </div>
+        <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
     </div>
   );
 };
