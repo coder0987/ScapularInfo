@@ -209,7 +209,59 @@ export const sourcesList = {
       nihilObstat: 'Unknown',
       imprimatur: 'Unknown',
       imprimiPotest: 'Unknown'
-    }
+    },
+    littleOfficeCatholicWay: {
+      ISBN: '978-1-78379-351-8',
+      date: '2014',
+      publisher: 'Catholic Way Publishing',
+      author: 'Various',
+      editor: 'Unknown',
+      name: 'The Little Office of the Blessed Virgin Mary',
+      link: 'Unknown',
+      website: 'Unknown',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    littleOfficeAngelusPress: {
+      ISBN: '978-1-937843-19-9',
+      date: '2014',
+      publisher: 'Angelus Press',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'The Little Office of the Blessed Virgin Mary and The Office of the Dead',
+      link: 'Unknown',
+      website: 'Unknown',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    littleOfficeUDayton: {
+      ISBN: 'Unknown',
+      date: 'Unknown',
+      publisher: 'University of Dayton - Marian Library',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'Little Office of the Blessed Virgin Mary',
+      link: 'https://udayton.edu/imri/mary/l/little-office-of-the-blessed-virgin-mary.php',
+      website: 'University of Dayton',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    catholicEncyclopediaLittleOffice: {
+      ISBN: 'Unknown',
+      date: 'April 19, 1913',
+      publisher: 'Robert Appleton Company',
+      author: 'Unknown',
+      editor: 'Charles G. Herbermann, Ph.D., LL.D.',
+      name: 'The Catholic Encyclopedia: Scapular',
+      link: 'https://www.catholic.com/encyclopedia/little-office-of-our-lady',
+      website: 'Catholic Answers',
+      nihilObstat: 'Remy Lafort, S.T.D',
+      imprimatur: '+ John Cardinal Farley, Archbishop of New York',
+      imprimiPotest: 'Unknown'
+  },
 };
 
 export const sidebarLinks = [
@@ -290,7 +342,7 @@ export const littleOfficeMenu = [
   },
   {
       route: "/rubrics",
-      label: "Rubrics",
+      label: "How to Pray",
       element: LittleOffice.Rubrics
   },
 ];
