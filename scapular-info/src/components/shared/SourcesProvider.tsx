@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import SourcesContext from '@/context/SourcesContext';
 
 const SourcesProvider = ( { children }: { children: ReactNode } ) => {

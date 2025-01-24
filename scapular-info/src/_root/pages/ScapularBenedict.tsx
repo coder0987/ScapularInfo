@@ -15,7 +15,7 @@ const ScapularBenedict = () => {
             </p>
             <p className="pr">
               The scapular of St. Benedict is conferred on those who charitably contribute to the Order of St. Benedict and lead virtuous lives
-              <SourcesCite source="manualOfDevotions" className="italics">
+              <SourcesCite source="manualOfDevotions" className="italic">
                 A Manual of Devotions
               </SourcesCite>.
             </p>

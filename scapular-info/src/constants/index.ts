@@ -9,6 +9,7 @@ import {
   ScapularBlackDolors,
   LittleOffice,
   ScapularWhite,
+  SevenSorrowsJesus
 } from "@/_root/pages";
 
 export interface source {
@@ -156,6 +157,32 @@ export const sourcesList = {
       imprimatur: 'Domnus Placidus Burchall',
       imprimiPotest: 'Unknown'
     },
+    ipadreTwelveYearPrayer: {
+      ISBN: 'Unknown',
+      date: 'Unknown',
+      publisher: 'iPadre',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: '7 Prayers of St. Bridget to be Recited for 12 Years',
+      link: 'https://www.ipadre.net/wp-content/uploads/2013/08/saint_bridget_prayers-12_years.pdf',
+      website: 'iPadre',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    },
+    catholicShoppe: {
+      ISBN: 'Unknown',
+      date: 'Unknown',
+      publisher: 'Catholic Shoppe USA',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'The Twelve Year Prayers of Saint Bridget on the Passion of Jesus',
+      link: 'https://www.catholicshoppeusa.com/products/st-bridget-twelve-year-prayers-on-the-passion-of-jesus',
+      website: 'Catholic Shoppe USA',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
+    }
 };
 
 export const sidebarLinks = [
@@ -280,7 +307,13 @@ export const prayers = [
         route: "/prayers/seven-sorrows",
         label: "Seven Sorrows",
         element: SevenSorrows,
-    }
+    },
+    {
+      imgURL: "/brownscapular.jpg",
+      route: "/prayers/seven-sorrows-jesus",
+      label: "Seven Sorrows of Jesus",
+      element: SevenSorrowsJesus,
+    },
 ];
 
 export const resources = [

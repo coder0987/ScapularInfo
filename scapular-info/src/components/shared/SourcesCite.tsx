@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { ReactNode, useContext, useEffect } from 'react';
 import SourcesContext from '@/context/SourcesContext';
 
 interface SourcesCiteProps {

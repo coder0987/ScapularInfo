@@ -2,6 +2,7 @@ export { default as Home } from "./Home";
 
 export { default as Prayers } from "./Prayers";
 export { default as SevenSorrows } from "./SevenSorrows";
+export { default as SevenSorrowsJesus } from "./SevenSorrowsJesus";
 
 export { default as Resources } from "./Resources";
 export { default as LittleOffice } from "./LittleOffice";
