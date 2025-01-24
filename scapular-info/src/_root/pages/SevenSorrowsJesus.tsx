@@ -14,10 +14,6 @@ const SevenSorrowsJesus = () => {
                         Our Lord promised to all who pray them the five graces listed below.
                     </p>
                     <p className="pr">
-                        At the completion, they would have honored each of the
-                        5,480 blows and wounds to Jesus' Body.
-                    </p>
-                    <p className="pr">
                         If the person praying these prayers dies before the twelve years are over, Our Lord will accept them as having been prayed in their entirety.
                         If a day or two are missed due to a valid reason, they can be made up later.
                     </p>
@@ -26,11 +22,11 @@ const SevenSorrowsJesus = () => {
                         as well as by Pope Clement XII. Pope Innocent X confirmed this revelation as being from Our Lord.
                     </p>
                     <ol className="list-decimal pr pl-6">
-                        <li>The sould who prays them suffers no Purgatory</li>
+                        <li>The soul who prays them suffers no Purgatory</li>
                         <li>The soul who prays them will be accepted among the Martyrs, as though he had spilled his blood for his faith.</li>
                         <li>The soul who prays them can choose three others whom Jesus will then keep in a state of grace sufficient to become holy.</li>
                         <li>No one in the four successive generations of the soul who prays them will be lost.</li>
-                        <li>The sould who prays them will be made conscious of his death one month in advance.</li>
+                        <li>The soul who prays them will be made conscious of his death one month in advance.</li>
                     </ol>
                     <h3 className="subtitle">Opening Prayer</h3>
                     <p className="pr">
