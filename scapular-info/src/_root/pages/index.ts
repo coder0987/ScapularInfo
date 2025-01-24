@@ -14,6 +14,7 @@ export { default as ScapularRoot } from "./ScapularRoot";
 export { default as ScapularBrown } from "./ScapularBrown";
 export { default as ScapularBenedict } from "./ScapularBenedict";
 export { default as ScapularBlackDolors } from "./ScapularBlackDolors";
+export { default as ScapularBlackPassion } from "./ScapularBlackPassion";
 export { default as ScapularBlue } from "./ScapularBlueImmaculate";
 export { default as ScapularGreen } from "./ScapularGreen";
 export { default as ScapularRed } from "./ScapularRedPassion";

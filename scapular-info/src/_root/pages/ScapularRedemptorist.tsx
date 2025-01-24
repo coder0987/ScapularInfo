@@ -1,3 +1,4 @@
+import PlenaryIndulgence from "@/components/shared/PlenaryIndulgence";
 import SourcesCite from "@/components/shared/SourcesCite";
 import { Link } from "react-router-dom";
 
@@ -74,14 +75,7 @@ ScapularRedemptorist.blessings = () => {
               From the White Scapular of the Trinity
             </p>
             <p className="pr">There are no special graces from wearing the white scapular</p>
-            <p className="pr">*To gain a plenary indulgence, one must:</p>
-            <ul className="list-disc pr pl-6">
-                <li>Be in the state of grace and free from all attachment to sin, even venial sin</li>
-                <li>Have a general intention to gain the indulgence</li>
-                <li>Perform acts to obtain the indulgence</li>
-                <li>Receive the Sacrament of Reconciliation and Holy Eucharist</li>
-                <li>Pray for the intentions of the Holy Father.</li>
-            </ul>
+            <PlenaryIndulgence />
         </div>
     </div>
   );

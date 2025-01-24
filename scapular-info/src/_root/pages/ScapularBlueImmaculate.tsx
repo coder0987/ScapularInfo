@@ -1,3 +1,4 @@
+import PlenaryIndulgence from "@/components/shared/PlenaryIndulgence";
 import SourcesCite from "@/components/shared/SourcesCite";
 import { Link } from "react-router-dom";
 
@@ -41,14 +42,7 @@ ScapularBlue.blessings = () => {
                 <li>The feast of St. Stanislaus Papczynski  (the founder of the Marian Fathers), May 18</li>
                 <li>The feast of St. Cajetan (the founder of the Theatine Order), August 7</li>
             </ul>
-            <p className="pr">*To gain a plenary indulgence, one must:</p>
-            <ul className="list-disc pr pl-6">
-                <li>Be in the state of grace and free from all attachment to sin, even venial sin</li>
-                <li>Have a general intention to gain the indulgence</li>
-                <li>Perform acts to obtain the indulgence</li>
-                <li>Receive the Sacrament of Reconciliation and Holy Eucharist</li>
-                <li>Pray for the intentions of the Holy Father.</li>
-            </ul>
+            <PlenaryIndulgence />
         </div>
     </div>
   );

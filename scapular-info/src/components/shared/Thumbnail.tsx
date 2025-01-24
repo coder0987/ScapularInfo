@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { ReactNode } from "react";
 
 const Thumbnail = ({ children, link, className }: { children: ReactNode, link: string, className: string }) => {
   return (
@@ -17,10 +18,10 @@ const Thumbnail = ({ children, link, className }: { children: ReactNode, link: s
   );
 };
 
-const Header = ({ children }: { children: Node }) => {
+const Header = ({ children }: { children: ReactNode }) => {
   return (
       <CardHeader className="h-12 flex-center">
-       <CardTitle className="thumbnail-header select-none">{children}</CardTitle>
+       <CardTitle className="thumbnail-header select-none text-center">{children}</CardTitle>
       </CardHeader>
   );
 };

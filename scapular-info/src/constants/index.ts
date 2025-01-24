@@ -9,7 +9,8 @@ import {
   ScapularBlackDolors,
   LittleOffice,
   ScapularWhite,
-  SevenWoundsJesus
+  SevenWoundsJesus,
+  ScapularBlackPassion
 } from "@/_root/pages";
 
 export interface source {
@@ -182,6 +183,19 @@ export const sourcesList = {
       nihilObstat: 'Unknown',
       imprimatur: 'Unknown',
       imprimiPotest: 'Unknown'
+    },
+    blackScapularCatholicTelegraph: {
+      ISBN: 'Unknown',
+      date: 'February 28, 1889',
+      publisher: 'Owen Smith',
+      author: 'Unknown',
+      editor: 'Catholic Advocate',
+      name: 'Catholic Telegraph Vol. LVIII No. 9',
+      link: 'https://thecatholicnewsarchive.org/?a=d&d=TCT18890228-01.2.29&e=-------en-20--1--txt-txIN--------',
+      website: 'Catholic News Archive',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
     }
 };
 
@@ -299,6 +313,12 @@ export const scapulars = [
       route: "/scapulars/black-scapular",
       label: "Black Scapular",
       element: ScapularBlackDolors,
+    },
+    {
+      imgURL: "/brownscapular.jpg",
+      route: "/scapulars/black-scapular-passion",
+      label: "Black Scapular of the Passion",
+      element: ScapularBlackPassion,
     },
     {
       imgURL: "/brownscapular.jpg",

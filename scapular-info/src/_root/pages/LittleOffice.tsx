@@ -26,10 +26,11 @@ const LittleOffice = () => {
 
 LittleOffice.History = () => {
   return (
-    <div className="flex flex-col gap-6 m-2 p-5 md:px-4 lg:p-6 flex-1">
+    <div className="flex flex-col gap-6 m-2 p-5 flex-1">
         <h2 className="title">The Little Office of the Blessed Virgin Mary</h2>
-        <div className="flex">
-            <p>The Little Office is available online <a target="_blank" className="text-sky-500" href="https://www.liturgies.net/Liturgies/Catholic/LittleOffice1.pdf">here</a></p>
+        <div className="flex flex-col">
+            
+            <p>The Little Office is available online <a target="_blank" rel="noopener noreferrer" className="text-sky-500" href="https://www.liturgies.net/Liturgies/Catholic/LittleOffice1.pdf">here</a></p>
         </div>
     </div>
   );
@@ -37,10 +38,10 @@ LittleOffice.History = () => {
 
 LittleOffice.Blessings = () => {
   return (
-    <div className="flex flex-col gap-6 m-2 p-5 md:px-4 lg:p-6 flex-1">
+    <div className="flex flex-col gap-6 m-2 p-5 flex-1">
         <h2 className="title">The Little Office of the Blessed Virgin Mary</h2>
         <div className="flex">
-            <p>The Little Office is available online <a target="_blank" className="text-sky-500" href="https://www.liturgies.net/Liturgies/Catholic/LittleOffice1.pdf">here</a></p>
+            <p>The Little Office is available online <a target="_blank" rel="noopener noreferrer" className="text-sky-500" href="https://www.liturgies.net/Liturgies/Catholic/LittleOffice1.pdf">here</a></p>
         </div>
     </div>
   );
@@ -48,10 +49,12 @@ LittleOffice.Blessings = () => {
 
 LittleOffice.Rubrics = () => {
   return (
-    <div className="flex flex-col gap-6 m-2 p-5 md:px-4 lg:p-6 flex-1">
+    <div className="flex flex-col gap-6 m-2 p-5 flex-1">
         <h2 className="title">The Little Office of the Blessed Virgin Mary</h2>
-        <div className="flex">
-            <p>The Little Office is available online <a target="_blank" className="text-sky-500" href="https://www.liturgies.net/Liturgies/Catholic/LittleOffice1.pdf">here</a></p>
+        <div className="flex flex-col">
+            <p className="caption">This page is intended for those who pray the Little Office in private (or small groups).</p>
+            <p className="caption">Anyone praying in a church or oratory should follow the official rubrics.</p>
+            <p>The Little Office is available online <a target="_blank" rel="noopener noreferrer" className="text-sky-500" href="https://www.liturgies.net/Liturgies/Catholic/LittleOffice1.pdf">here</a></p>
         </div>
     </div>
   );
