@@ -196,6 +196,19 @@ export const sourcesList = {
       nihilObstat: 'Unknown',
       imprimatur: 'Unknown',
       imprimiPotest: 'Unknown'
+    },
+    blackScapularOurScapular: {
+      ISBN: 'Unknown',
+      date: '1949',
+      publisher: 'Unknown',
+      author: 'Unknown',
+      editor: 'Unknown',
+      name: 'Our Scapular',
+      link: 'https://passionistcharism.wordpress.com/wp-content/uploads/2012/06/our-scapular-passionist-magazine-1949.pdf',
+      website: 'Passionist Charism',
+      nihilObstat: 'Unknown',
+      imprimatur: 'Unknown',
+      imprimiPotest: 'Unknown'
     }
 };
 
