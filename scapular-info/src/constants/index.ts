@@ -10,7 +10,8 @@ import {
   LittleOffice,
   ScapularWhite,
   SevenWoundsJesus,
-  ScapularBlackPassion
+  ScapularBlackPassion,
+  Matins
 } from "@/_root/pages";
 
 export interface source {
@@ -285,6 +286,11 @@ export const sidebarLinks = [
     label: "Resources",
     imgURL: "/assets/icons/resources.svg",
   },
+  {
+    imgURL: "/assets/icons/hours.svg",
+    route: "/hours",
+    label: "Hours",
+  },
 ];
 
 export const bottombarLinks = [
@@ -307,6 +313,11 @@ export const bottombarLinks = [
     imgURL: "/assets/icons/resources.svg",
     route: "/resources",
     label: "Resources",
+  },
+  {
+    imgURL: "/assets/icons/hours.svg",
+    route: "/hours",
+    label: "Hours",
   },
 ];
 
@@ -419,6 +430,15 @@ export const prayers = [
       label: "Seven Wounds of Jesus",
       element: SevenWoundsJesus,
     },
+];
+
+export const hours = [
+  {
+      imgURL: "/brownscapular.jpg",
+      route: "/hours/matins",
+      label: "Matins",
+      element: Matins,
+  },
 ];
 
 export const resources = [

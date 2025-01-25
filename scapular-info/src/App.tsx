@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { scapulars, prayers, resources } from "@/constants";
+import { scapulars, prayers, resources, hours } from "@/constants";
 
 import {
   Home,
@@ -11,7 +11,9 @@ import {
   FairUse,
   License,
   ScapularConstruction,
-  ScapularMedal
+  ScapularMedal,
+  HoursRoot,
+  Hours
 } from "@/_root/pages";
 import RootLayout from "./_root/RootLayout";
 
@@ -82,6 +84,15 @@ const App = () => {
                 )
               })
             }
+          </Route>
+          <Route path="/hours" element={<HoursRoot />}>
+            <Route index element={<Hours />} />
+            {hours.map(i => {
+              return (
+                <Route path={i.route} element={i.element()} key={"hour-"+i.label} />
+              )
+            })
+          }
           </Route>
         </Route>
       </Routes>

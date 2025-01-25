@@ -1,6 +1,6 @@
 import Row from "@/components/shared/Row";
 import QuoteBox from "@/components/shared/QuoteBox";
-import { scapulars, prayers, resources } from "@/constants";
+import { scapulars, prayers, resources, hours } from "@/constants";
 
 const Home = ({ className }: { className?: string }) => {
   return (
@@ -25,6 +25,8 @@ const Home = ({ className }: { className?: string }) => {
         <Row label="prayer" content={prayers} />
         <h2 className="title">Resources</h2>
         <Row label="resource" content={resources} />
+        <h2 className="title">Hours</h2>
+        <Row label="resource" content={hours} />
     </div>
   );
 };

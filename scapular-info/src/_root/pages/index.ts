@@ -21,5 +21,9 @@ export { default as ScapularRed } from "./ScapularRedPassion";
 export { default as ScapularRedemptorist } from "./ScapularRedemptorist";
 export { default as ScapularWhite } from "./ScapularWhiteTrinity";
 
+export { default as HoursRoot } from "./HoursRoot";
+export { default as Hours } from "./Hours";
+export { default as Matins } from "./Matins";
+
 export { default as FairUse } from "./FairUse";
 export { default as License } from "./License";
