@@ -1,8 +1,13 @@
 import { createContext } from 'react';
 
-const SourcesContext = createContext({
-  list: [], 
-  addItem: (item: any) => {}
+interface SourcesContextType {
+  list: string[];
+  addItem: (item: string) => void;
+}
+
+const SourcesContext = createContext<SourcesContextType>({
+  list: [],
+  addItem: () => {}
 });
 
 export default SourcesContext;
