@@ -108,6 +108,28 @@
     @apply text-red;
   }
 
+  .office-title {
+    @apply text-[24px] font-normal leading-[140%] text-center text-red;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .hymn {
+    @apply text-[19px] font-normal leading-[140%] text-justify;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .psalm {
+    @apply text-[19px] font-normal leading-[140%] text-left;
+    text-indent: -1em;
+    padding-left: 1em;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .office-instruction {
+    @apply italic text-[14px] font-normal leading-[140%] text-center text-red;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
   .base-large {
     @apply text-[32px] font-medium leading-[140%];
   }
