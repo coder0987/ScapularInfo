@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
-const { blackA, mauve, violet, indigo, purple } = require('@radix-ui/colors');
+const { blackA, mauve, violet, indigo, purple, red } = require('@radix-ui/colors');
 
 module.exports = {
   darkMode: ["class"],
@@ -70,6 +70,7 @@ module.exports = {
         ...violet,
         ...purple,
         ...indigo,
+        ...red,
         'primary-500': '#4A2915',
         'primary-600': '#341A0B',
         'secondary-500': '#9C613A',

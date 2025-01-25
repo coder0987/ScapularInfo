@@ -98,6 +98,16 @@
     font-family: Georgia,helvetica,sans-serif;
   }
 
+  /* Little Office */
+  .little-office {
+    @apply text-[19px] font-normal leading-[140%] text-justify;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .red {
+    @apply text-red;
+  }
+
   .base-large {
     @apply text-[32px] font-medium leading-[140%];
   }
