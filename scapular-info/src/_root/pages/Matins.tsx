@@ -18,6 +18,11 @@ const Matins = () => {
         <div className="flex-1 flex-col flex w-full">
             <p className="little-office"><Symbols.Versicle /> Lord, <Symbols /> Thou shalt open my lips.</p>
             <p className="little-office"><Symbols.Response /> And my mouth shall declare Thy praise.</p>
+            <p className="little-office"><Symbols.Versicle /> O God <Symbols /> come to my assistance.</p>
+            <p className="little-office"><Symbols.Response /> O Lord, make haste to help me.</p>
+            <p className="little-office"> Glory be,</p>
+
+
             {isLent ? <p>Praise be to Thee, O Lord, King of glory everlasting.</p> : <p>Alleluia.</p>}
             {firstNocturn && <p className="office-title">First Nocturn</p>}
             {secondNocturn && <p>Second Nocturn</p>}
