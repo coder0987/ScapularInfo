@@ -1,4 +1,3 @@
-import SeasonSelector from "@/components/shared/SeasonSelector";
 import Sources from "@/components/shared/Sources";
 import SourcesProvider from "@/components/shared/SourcesProvider";
 

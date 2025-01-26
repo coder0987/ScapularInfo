@@ -1,7 +1,7 @@
 import Thumbnail from "@/components/shared/Thumbnail";
-import { ReactNode } from "react";
+import { ScapularType } from "@/types";
 
-const Row = ({ children, className, label, content }: { children: ReactNode, className: string, label: string, content: Array<string> }) => {
+const Row = ({ className, label, content }: { className: string, label: string, content: ScapularType[] }) => {
   const combinedClasses = `flex flex-wrap md:flex-row flex-col items-center md:items-start ${className}`;
   return (
       <div className={combinedClasses}>
@@ -17,7 +17,6 @@ const Row = ({ children, className, label, content }: { children: ReactNode, cla
               })
             )
         }
-        { children }
       </div>
   );
 };

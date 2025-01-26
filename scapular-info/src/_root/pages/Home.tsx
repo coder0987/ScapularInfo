@@ -20,13 +20,13 @@ const Home = ({ className }: { className?: string }) => {
             </div>
         </QuoteBox>
         <h2 className="title">Scapulars</h2>
-        <Row label="scapular" content={scapulars} />
+        <Row className="" label="scapular" content={scapulars} />
         <h2 className="title">Prayers</h2>
-        <Row label="prayer" content={prayers} />
+        <Row className="" label="prayer" content={prayers} />
         <h2 className="title">Resources</h2>
-        <Row label="resource" content={resources} />
+        <Row className="" label="resource" content={resources} />
         <h2 className="title">Hours</h2>
-        <Row label="resource" content={hours} />
+        <Row className="" label="resource" content={hours} />
     </div>
   );
 };

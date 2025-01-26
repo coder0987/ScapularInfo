@@ -23,7 +23,7 @@ const Scapulars = () => {
                 </SourcesCite>.
             </p>
 
-            <Row label="scapular" content={scapulars} />
+            <Row label="scapular" content={scapulars} className="" />
             <Sources />
             <CompiledNotice author="Samuel Mach" date="Nov. 2024" />
         </div>

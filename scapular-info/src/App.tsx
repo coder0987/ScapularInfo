@@ -69,7 +69,7 @@ const App = () => {
               resources.map(i => {
                 return (
                   <>
-                  { typeof i.subroutes !== undefined ?
+                  { typeof i.subroutes !== undefined && i.subroutes !== undefined ?
                     <Route path={i.route} element={i.element()} key={"resource-"+i.label}>
                       {i.subroutes.map(j => {
                         return (

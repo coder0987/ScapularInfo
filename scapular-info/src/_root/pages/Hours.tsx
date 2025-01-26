@@ -1,5 +1,4 @@
 import Row from "@/components/shared/Row";
-import SourcesCite from "@/components/shared/SourcesCite";
 import Sources from "@/components/shared/Sources";
 import SourcesProvider from "@/components/shared/SourcesProvider";
 import { hours } from "@/constants";
@@ -15,7 +14,7 @@ const Hours = () => {
                 The daily hours of the Little Office
             </p>
 
-            <Row label="hours" content={hours} />
+            <Row className="" label="hours" content={hours} />
             <Sources />
             <CompiledNotice author="Samuel Mach" date="Jan. 2025" />
         </div>

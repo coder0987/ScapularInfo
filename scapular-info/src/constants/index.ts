@@ -14,6 +14,10 @@ import {
   Matins
 } from "@/_root/pages";
 
+import {
+  ScapularType
+} from "@/types/";
+
 export interface source {
     ISBN: string;
     date: string;
@@ -414,7 +418,7 @@ export const scapulars = [
       label: "White Scapular",
       element: ScapularWhite,
     },
-];
+] as ScapularType[];
 
 export const prayers = [
     {
@@ -430,7 +434,7 @@ export const prayers = [
       label: "Seven Wounds of Jesus",
       element: SevenWoundsJesus,
     },
-];
+] as ScapularType[];
 
 export const hours = [
   {
@@ -439,7 +443,7 @@ export const hours = [
       label: "Matins",
       element: Matins,
   },
-];
+] as ScapularType[];
 
 export const resources = [
     {
@@ -449,4 +453,4 @@ export const resources = [
         element: LittleOffice,
         subroutes: littleOfficeMenu
     }
-];
+] as ScapularType[];

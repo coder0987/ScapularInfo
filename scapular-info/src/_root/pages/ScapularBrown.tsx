@@ -1,5 +1,4 @@
 import CompiledNotice from "@/components/shared/CompiledNotice";
-import SourcesCite from "@/components/shared/SourcesCite";
 import { Link } from "react-router-dom";
 
 const ScapularBrown = () => {
