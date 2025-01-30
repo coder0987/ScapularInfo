@@ -2,7 +2,7 @@ import { ReactNode, useState } from 'react';
 import SourcesContext from '@/context/SourcesContext';
 
 const SourcesProvider = ( { children }: { children: ReactNode } ) => {
-    const [list, updateList] = useState([]);
+    const [list, updateList] = useState<string[]>([]);
 
     const addItem = (additionalSource: string) => {
       console.log('Adding item:', additionalSource);

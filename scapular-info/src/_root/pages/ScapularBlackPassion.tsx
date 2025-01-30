@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ScapularBlackPassion = () => {
   return (
     <div className="flex flex-col gap-6 m-2 md:m-6">
-        <h2 className="title text-center md:text-left">Black Scapular of the Seven Dolors of Mary</h2>
+        <h2 className="title text-center md:text-left">Black Scapular of the Passion</h2>
         <div className="flex flex-col items-start justify-start space-y-4">
             <p className="pr">
               In 1720, St. Paul of the Cross received a series of visions in which he saw himself, and later the Blessed Virgin, dressed in a black tunic.
