@@ -5,10 +5,10 @@ import { Outlet } from "react-router-dom";
 
 const HoursRoot = () => {
     return (
-        <div className="flex-1 flex-col flex w-full">
+        <div className="flex-1 flex-col flex w-full md:max-w-3xl">
             <div className="px-4">
                 <SourcesProvider>
-                        <div>
+                        <div className="">
                             <Outlet />
                             <Sources />
                         </div>
