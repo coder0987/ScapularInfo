@@ -6,11 +6,12 @@ import Symbols from "@/components/shared/Symbols";
 import { useHoursContext } from "@/context/HoursContext";
 
 import Psalm8 from "@/components/psalms/Psalm8";
+import Psalm18 from "@/components/psalms/Psalm18";
+import Psalm23 from "@/components/psalms/Psalm23";
 
 const Matins = () => {
     const {
         isLent,      
-        isPassionTide, 
         isAdvent,     
         isCandlemas,  
         isChristmas,  
@@ -45,7 +46,7 @@ const Matins = () => {
             <p className="office-title"> PSALM 94 Venite, exultemus </p>
             <div className="flex flex-col psalm gap-y-1">
                 <p>
-                    O COME, let us exalt in the Lord; * let us rejoice before God our Savior.
+                    O COME, let us exult in the Lord; * let us rejoice before God our Savior.
                 </p>
                 <p>
                     Let us come into His presence with thanksgiving * and rejoice before Him with psalms.
@@ -148,7 +149,7 @@ const Matins = () => {
                     Blessed art thou *
                     among women, and blessed is the fruit of thy womb.
                 </p>
-                <Psalm8 gloria={!isPassionTide} />
+                <Psalm8 />
                 <p className="little-office">
                     <span className="red">Ant. </span>
                     Blessed art thou among women, and blessed is the fruit of thy womb.
@@ -157,6 +158,21 @@ const Matins = () => {
                     <span className="red">Antiphon 2 </span>
                     Like unto choice myrrh *
                     thou yieldest a sweet smell, O holy Mother of God.
+                </p>
+                <Psalm18 />
+                <p className="little-office">
+                    <span className="red">Ant. </span>
+                    Like unto choice myrrh thou yieldest a sweet smell, O holy Mother of God.
+                </p>
+                <p className="little-office">
+                    <span className="red">Antiphon 3 </span>
+                    Before this Virgin's couch *
+                    sing us again and again the sweet songs of the play.
+                </p>
+                <Psalm23 />
+                <p className="little-office">
+                    <span className="red">Ant. </span>
+                    Before this Virgin's couch sing us again and again the sweet songs of the play.
                 </p>
             </>}
             {secondNocturn && <p className="office-title">Second Nocturn</p>}

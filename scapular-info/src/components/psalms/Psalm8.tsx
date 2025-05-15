@@ -1,7 +1,7 @@
 import GloriaPatri from "../shared/GloriaPatri"
 
 
-const Psalm8 = ({ gloria }: { gloria: boolean }) => {
+const Psalm8 = () => {
     return (
         <>
             <p className="office-title"> PSALM 8 Domine, Dominus noster </p>
@@ -38,7 +38,7 @@ const Psalm8 = ({ gloria }: { gloria: boolean }) => {
                     O Lord, our Lord, *
                     how admirable is Thy name in all the earth!
                 </p>
-                {gloria && <GloriaPatri />}
+                <GloriaPatri />
             </div>
         </>
     )

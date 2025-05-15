@@ -1,13 +1,13 @@
 import GloriaPatri from "../shared/GloriaPatri"
 
 
-const Psalm18 = ({ gloria }: { gloria: boolean }) => {
+const Psalm18 = () => {
     return (
         <>
             <p className="office-title"> PSALM 18 Caeli enarrant </p>
             <div className="flex flex-col psalm gap-y-1">
                 <p>
-                    The heavens are telling the glory of God: *
+                    THE heavens are telling the glory of God: *
                     and the firmament declareth the works of His hands.
                 </p>
                 <p>
@@ -66,7 +66,7 @@ const Psalm18 = ({ gloria }: { gloria: boolean }) => {
                     O Lord, my helper *
                     and my Redeemer.
                 </p>
-                {gloria && <GloriaPatri />}
+                <GloriaPatri />
             </div>
         </>
     )

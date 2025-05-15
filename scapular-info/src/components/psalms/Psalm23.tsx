@@ -1,13 +1,13 @@
 import GloriaPatri from "../shared/GloriaPatri"
 
 
-const Psalm23 = ({ gloria }: { gloria: boolean }) => {
+const Psalm23 = () => {
     return (
         <>
             <p className="office-title"> PSALM 23 Domini est terra </p>
             <div className="flex flex-col psalm gap-y-1">
                 <p>
-                    The earth is the Lord's, and the fullness thereof: *
+                    THE earth is the Lord's, and the fullness thereof: *
                     the world and all they that dwell therein.
                 </p>
                 <p>
@@ -38,7 +38,7 @@ const Psalm23 = ({ gloria }: { gloria: boolean }) => {
                     Who is this King of glory? *
                     The Lord of hosts, He is the King of glory.
                 </p>
-                {gloria && <GloriaPatri />}
+                <GloriaPatri />
             </div>
         </>
     )
