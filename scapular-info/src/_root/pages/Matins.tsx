@@ -8,6 +8,7 @@ import { useHoursContext } from "@/context/HoursContext";
 import Psalm8 from "@/components/psalms/Psalm8";
 import Psalm18 from "@/components/psalms/Psalm18";
 import Psalm23 from "@/components/psalms/Psalm23";
+import Psalm44 from "@/components/psalms/Psalm44";
 
 const Matins = () => {
     const {
@@ -19,6 +20,9 @@ const Matins = () => {
         firstNocturn, 
         secondNocturn,
         thirdNocturn,
+        isLeader,
+        leadChoir,
+        followChoir,
     } = useHoursContext();
 
     //Classes: little-office red office-title hymn psalm office-instruction
@@ -175,7 +179,15 @@ const Matins = () => {
                     Before this Virgin's couch sing us again and again the sweet songs of the play.
                 </p>
             </>}
-            {secondNocturn && <p className="office-title">Second Nocturn</p>}
+            {secondNocturn && <>
+                <p className="office-title">Second Nocturn</p>
+                <p className="little-office">
+                    <span className="red">Antiphon 4 </span>
+                    In Thy comeliness *
+                    and Thy beauty, go forth, advance prosperously, and reign.
+                </p>
+                <Psalm44 />
+            </>}
             {thirdNocturn && <p className="office-title">Third Nocturn</p>}
 
             <ClosingPrayer />

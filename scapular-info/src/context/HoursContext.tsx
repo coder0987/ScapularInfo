@@ -10,6 +10,11 @@ interface HoursContextType {
     firstNocturn:   boolean,
     secondNocturn:  boolean,
     thirdNocturn:   boolean,
+    isLeader:       boolean,
+    leadChoir:      boolean,
+    followChoir:    boolean,
+    readerOne:      boolean,
+    readerTwo:      boolean,
     setIsLent       : (value: boolean) => void,
     setIsPassionTide: (value: boolean) => void,
     setIsAdvent     : (value: boolean) => void,
@@ -19,6 +24,11 @@ interface HoursContextType {
     setFirstNocturn : (value: boolean) => void,
     setSecondNocturn: (value: boolean) => void,
     setThirdNocturn : (value: boolean) => void,
+    setIsLeader     : (value: boolean) => void,
+    setLeadChoir    : (value: boolean) => void,
+    setFollowChoir  : (value: boolean) => void,
+    setReaderOne    : (value: boolean) => void,
+    setReaderTwo    : (value: boolean) => void,
 }
 
 const HoursContext = createContext<HoursContextType | undefined>(undefined);
@@ -41,6 +51,11 @@ export const HoursProvider = ({ children } : { children: ReactNode }) => {
     const [firstNocturn,    setFirstNocturn ] = useState(false);
     const [secondNocturn,   setSecondNocturn] = useState(false);
     const [thirdNocturn,    setThirdNocturn ] = useState(false);
+    const [isLeader    ,    setIsLeader     ] = useState(true);
+    const [leadChoir   ,    setLeadChoir    ] = useState(true);
+    const [followChoir ,    setFollowChoir  ] = useState(true);
+    const [readerOne   ,    setReaderOne    ] = useState(true);
+    const [readerTwo   ,    setReaderTwo    ] = useState(true);
 
     return (
         <HoursContext.Provider value={{
@@ -53,6 +68,11 @@ export const HoursProvider = ({ children } : { children: ReactNode }) => {
             firstNocturn,    setFirstNocturn ,
             secondNocturn,   setSecondNocturn,
             thirdNocturn,    setThirdNocturn ,
+            isLeader    ,    setIsLeader     ,
+            leadChoir   ,    setLeadChoir    ,
+            followChoir ,    setFollowChoir  ,
+            readerOne   ,    setReaderOne    ,
+            readerTwo   ,    setReaderTwo    ,
         }}>
             {children}
         </HoursContext.Provider>

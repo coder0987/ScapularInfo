@@ -124,6 +124,10 @@
     padding-left: 1em;
     font-family: 'Times New Roman', Times, serif;
   }
+
+  .psalm-disabled {
+    @apply text-gray-400;
+  }
   
   .office-instruction {
     @apply italic text-[14px] font-normal leading-[140%] text-center text-red;

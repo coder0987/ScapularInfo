@@ -15,6 +15,11 @@ const SeasonSelector = () => {
             firstNocturn,    setFirstNocturn ,
             secondNocturn,   setSecondNocturn,
             thirdNocturn,    setThirdNocturn ,
+            isLeader    ,    setIsLeader     ,
+            leadChoir   ,    setLeadChoir    ,
+            followChoir ,    setFollowChoir  ,
+            readerOne   ,    setReaderOne    ,
+            readerTwo   ,    setReaderTwo    ,
         } = useHoursContext();
 
         
@@ -138,7 +143,38 @@ const SeasonSelector = () => {
           }, [timeZone]);
 
         
-        
+    const [solo, setSolo] = useState(true);
+
+    function changeLeader(s: Boolean) {
+        if (s) {
+            setIsLeader(true);
+            setLeadChoir(true);
+        } else {
+            setIsLeader(false);
+        }
+    }
+
+    function changeLeaderChoir(s : Boolean) {
+        if (s) {
+            setLeadChoir(true);
+        } else {
+            setIsLeader(false);
+            setLeadChoir(false);
+        }
+    }
+
+    function changeSolo(s : Boolean) {
+        if (s) {
+            setSolo(true);
+            setIsLeader(true);
+            setLeadChoir(true);
+            setFollowChoir(true);
+            setReaderOne(true);
+            setReaderTwo(true);
+        } else {
+            setSolo(false);
+        }
+    }
 
     return (
         <div className="flex-1 flex-col flex w-full">
@@ -152,6 +188,15 @@ const SeasonSelector = () => {
             <Switch label="First Nocturn " value={firstNocturn}  setValue={setFirstNocturn } />
             <Switch label="Second Nocturn" value={secondNocturn} setValue={setSecondNocturn} />
             <Switch label="Third Nocturn" value={thirdNocturn}  setValue={setThirdNocturn } />
+            
+            <Switch label="Pray Alone" value={solo}  setValue={changeSolo } />
+            {!solo && <>
+                <Switch label="Lead"             value={isLeader}      setValue={changeLeader     } />
+                <Switch label="Leader's Choir"   value={leadChoir}     setValue={changeLeaderChoir} />
+                <Switch label="Follower's Choir" value={followChoir}   setValue={setFollowChoir   } />
+                <Switch label="Reader One"       value={readerOne}     setValue={setReaderOne     } />
+                <Switch label="Reader Two"       value={readerTwo}     setValue={setReaderTwo     } />
+            </>}
             {/**/}
         </div>
   );
